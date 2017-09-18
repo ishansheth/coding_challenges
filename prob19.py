@@ -1,6 +1,5 @@
 #https://www.hackerrank.com/challenges/sherlock-and-valid-string/
 #!/bin/python3
-
 import sys
 from collections import *
 
@@ -11,10 +10,11 @@ def isValid(s):
     result = "NO"
     for i in str_set:
         freq_set.append(s.count(i))
-    temp = [i for i in freq_set if i != min(freq_set)]
-    if(len(temp)==1 or freq_set.count(freq_set[0]) == len(freq_set) or (abs(min(freq_set) - max(freq_set)) == 1)):
+    temp = [abs(i-min(freq_set)) for i in freq_set]
+    print(temp,freq_set)
+    if(sum(temp) == 0 or sum(temp) == 1):
         result="YES"
-    if((abs(min(freq_set) - max(freq_set)) > 1) or len(temp) > 1 ):
+    if(sum(temp)>1):
         result="NO"
     return result
         

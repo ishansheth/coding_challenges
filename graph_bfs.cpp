@@ -24,7 +24,7 @@ void Graph::addEdge(int v, int w){
   adj[v].push_back(w);
 }
 
-
+// traverse the graph using BFS algorithm
 void Graph::BFS(int s){
   bool* visited = new bool[v];
   for(int i = 0;i<v;i++)
@@ -54,6 +54,8 @@ void Graph::BFS(int s){
 }
 
 
+// prints the level of each node in a graph. Its a distance of each node
+// from the start node x
 // v is number of nodes, x is the starting point
 void printLevel(std::vector<int> graph[],int v,int x){
 	std::vector<int> level(v);

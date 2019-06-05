@@ -137,6 +137,9 @@ int countTrees(std::vector<int> adj[],int v){
   return noOfTrees;
 }
 
+void recusrionBFS(std::vector<int> adj[],int v,int s){
+}
+
 int main(){
   Graph g(4);
 
@@ -190,6 +193,8 @@ int main(){
   int nooftree = countTrees(forestGraph,11);
   std::cout<<"\nNo of trees:"<<nooftree<<std::endl;
 
+  std::cout<<"recursive BFS Nodes"<<std::endl;
+  recusrionBFS(forestGraph,11,0);
   return 0; 
 
 }

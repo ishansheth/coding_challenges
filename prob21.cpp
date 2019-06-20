@@ -58,7 +58,7 @@ void checkAnagrams(std::string str1,std::string str2){
 }
 
 int main(){
-  char s[] = "isha";
+  char s[] = "ABCD";
   stringPermutation(s,0,3);
 
   std::string ss = "ishann";

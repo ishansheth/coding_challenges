@@ -69,37 +69,6 @@ void mergeSort(int arr[], int n1){
   mergeTwoArrays(left,right,l1,l2);
 }
 
-void mergeArrays(int arr[][4],int k){
-
-  if(k<2)
-    return;
-
-  mergeArrays(arr,k/2);
-
-  int temp[k*4];
-  int arr1[k*4/2];
-  int arr2[k*4/2];
-  for(int i = 0;i<k*4/2;i++){
-    arr1[i] = arr[0][i];
-    arr2[i] = arr[k/2][i];
-  }
-  for(int i = 0;i<(k*4)/2;i++){
-    temp[i] = arr1[i];
-  }
-  for(int i = 0,j = (k*4)/2;i<(k*4)/2;i++,j++){
-    temp[j] = arr2[i];
-  }
-  for(int i = 0;i<k*4;i++)
-    std::cout<<"----->"<<temp[i]<<std::endl;
-
-  std::cout<<"=============="<<std::endl;
-
-}
-
-void mergeArrays(std::vector<std::vector<int>> arr){
-
-  
-}
 
 
 
@@ -205,7 +174,7 @@ int main(){
 
 
   int twodarr[][4] = {{1,3,5,7},{2,4,6,8},{0,9,10,11},{11,14,15,16}};
-  //  mergeArrays(twodarr,4);
+  mergeArrays(twodarr,4);
 
 
   ListNode* a;

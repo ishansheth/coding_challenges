@@ -72,34 +72,6 @@ int decodeMessage(std::string message){
 
 //https://www.geeksforgeeks.org/print-all-non-increasing-sequences-of-sum-equal-to-a-given-number/
 
-void printArr(int arr[], int n){
-  for(int i = 0;i<n;i++)
-    std::cout<<arr[i]<<std::endl;
-
-  std::cout<<std::endl;
-}
-
-void printSequences(int x, int arr[],int curr_sum,int curr_idx){
-  
-  if(curr_sum == x){
-    printArr(arr,curr_idx);
-    return;
-  }
-
-  int num = 1;
-  while(num<=x-curr_sum && (curr_idx==0 || num <= arr[curr_idx-1])){
-    arr[curr_idx] = num;
-
-    printSequences(x,arr,curr_sum+num,curr_idx+1);
-
-    num++;
-  }  
-}
-
-void generate(int x){
-  int arr[x];
-  printSequences(x,arr,0,0);
-}
 
 bool checkpeli(std::string ss, int i, int j){
   bool res = true;
@@ -133,7 +105,6 @@ int reverseInteger(int x){
   for(int i = 0;i<a.size();i++){
     output += a[i]*pow(10,a.size()-i-1);
   }
-  std::cout<<output;
   return output;
 }
 

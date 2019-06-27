@@ -224,7 +224,7 @@ int myatoi(std::string str){
 
 
 std::string recursionStringReverse(std::string str,int k){
-  
+
   if(k == (str.size())/2){
     return str;
   }

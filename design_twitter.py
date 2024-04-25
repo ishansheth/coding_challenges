@@ -1,4 +1,14 @@
 # https://leetcode.com/problems/design-twitter/description/
+"""
+["Twitter","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","follow","follow","follow","follow","follow","follow","follow","follow","follow","follow","follow","follow","getNewsFeed","getNewsFeed","getNewsFeed","getNewsFeed","getNewsFeed"]
+[[],[1,6765],[5,671],[3,2868],[4,8148],[4,386],[3,6673],[3,7946],[3,1445],[4,4822],[1,3781],[4,9038],[1,9643],[3,5917],[2,8847],[1,3],[1,4],[4,2],[4,1],[3,2],[3,5],[3,1],[2,3],[2,1],[2,5],[5,1],[5,2],[1],[2],[3],[4],[5]]
+
+output:
+[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[5917,9643,9038,3781,4822,1445,7946,6673,386,8148],[5917,8847,9643,3781,1445,7946,6673,2868,671,6765],[5917,8847,9643,3781,1445,7946,6673,2868,671,6765],[8847,9643,9038,3781,4822,386,8148,6765],[8847,9643,3781,671,6765]]
+
+expected:
+[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[5917,9643,9038,3781,4822,1445,7946,6673,386,8148],[8847,5917,9643,3781,1445,7946,6673,2868,671,6765],[8847,5917,9643,3781,1445,7946,6673,2868,671,6765],[8847,9643,9038,3781,4822,386,8148,6765],[8847,9643,3781,671,6765]]
+"""
 import heapq
 
 class Twitter:
